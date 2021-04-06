@@ -1,0 +1,59 @@
+/*Inicializa parâmetros de estilo 
+com valores padrão*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    /*vh significa uma fração
+    da janela de exibição(viewport)
+    nesse caso 100, signigica 100%*/
+    min-height: 100vh;
+    background-color: rgb(243,243,243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-wraper {
+    /*define o flex container e 
+    organiza os itens do container em linhas
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;
+    /*alinha os itens no eixo y
+    ao centro do flex container*/
+    align-items: center;
+    /*alinha os itens no eixo x
+    da esquerda para a direita*/
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.profile-photo img {
+    height: 10rem;
+    width: 10rem;
+}
+
+.instagram-continue {
+    display: flex;
+    
+}
