@@ -48,12 +48,59 @@ body {
     height: 50rem;
 }
 
-.profile-photo img {
-    height: 10rem;
-    width: 10rem;
-}
-
 .instagram-continue {
     display: flex;
-    
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    /* muda a direção da orientação do conteiner para
+    coluna (o default é linha) */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+/*nth-child é utilizado para
+selecionar os elementos dentro
+do conteiner*/
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
 }
